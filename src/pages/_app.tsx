@@ -13,7 +13,7 @@ import { arbitrum, mainnet, polygon, sepolia } from 'wagmi/chains';
 
 const projectId = process.env.NEXT_PUBLIC_PROJECT_ID || '';
 
-const supportedChains = [mainnet, polygon, arbitrum, sepolia];
+const supportedChains = [mainnet, sepolia];
 
 const { publicClient } = configureChains(supportedChains, [
   w3mProvider({ projectId }),
