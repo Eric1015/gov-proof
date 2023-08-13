@@ -15,7 +15,7 @@ const projectId = process.env.NEXT_PUBLIC_PROJECT_ID || '';
 
 const supportedChains = [mainnet, polygon, arbitrum, sepolia];
 
-const { chains, publicClient } = configureChains(supportedChains, [
+const { publicClient } = configureChains(supportedChains, [
   w3mProvider({ projectId }),
 ]);
 const wagmiConfig = createConfig({
