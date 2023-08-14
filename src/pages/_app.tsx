@@ -9,7 +9,7 @@ import { AppProps } from 'next/app';
 
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 
-import { arbitrum, mainnet, polygon, sepolia } from 'wagmi/chains';
+import { mainnet, sepolia } from 'wagmi/chains';
 
 const projectId = process.env.NEXT_PUBLIC_PROJECT_ID || '';
 
